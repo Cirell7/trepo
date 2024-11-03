@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная страница</title>
+  </head>
+  <body>
+    <header>
+      <h1>Я -- заголовок!</h1>
+      <h2>И автор данной странницы -- {{ author }}</h2>
+      <hr />
+      <p>Меню:</p>
+      <ul>
+        <li>
+          <a href="/second/">На вторую страницу</a>
+        </li>
+        <li>
+          <a href="/test/">На тестовую страницу</a>
+        </li>
+      </ul>
+      <hr />
+    </header>
+    <main>
+      <p>Пример текста!</p>
+      <p>А сейчас будет список</p>
+      <ol>
+        <li>Первый</li>
+        <li>Второй</li>
+        <li>Третий</li>
+      </ol>
+      <ul>
+        <li>Первый</li>
+        <li>Второй</li>
+        <li>Третий</li>
+      </ul>
+      <hr />
+      <p>Меня зовут -- {{ user.name }} и {{ user.surname }}</p>
+    </main>
+    <footer></footer>
+  </body>
+</html>

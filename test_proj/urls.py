@@ -1,5 +1,5 @@
 """
-URL configuration for start_q project.
+URL configuration for test_proj project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+import test_site.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path(route='22', view=test_site.views.hello_world),
+    path("text/",test_site.views.filic)
 ]
